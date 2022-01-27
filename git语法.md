@@ -45,11 +45,13 @@ git checkout <分支名>  //切换分支
 ```  
 # 12.合并分支，首先要切换到主分支，然后再去合并想要的分支，注意合并的顺序，即谁合并谁
 ```
-git branch master
-git merge bug
+git branch <主分支名>  //先切换到主分支
+git merge <其他分支名>  //再合并其他分支
 ```
 # 13.删除无用的分支，即bug分支合并到主分支后即无效了，可以删除
 ```
-git branch -d bug
+git branch -d <分支名称>  
 ```
-# 14.hhhhhhhh
+# 14.重命名当前分支  
+```  
+git branch -m <分支名称>
