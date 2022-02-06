@@ -21,7 +21,7 @@ git commit -m '描述信息'
 ```  
 # 7.查看版本记录  
 ```  
-git log  
+git log  // 此处可能一直出现：，可以通过键盘q退出,测试了终端清屏快捷键command+k
 ```  
 # 8.版本回滚  
 ```  
@@ -56,4 +56,15 @@ git branch -d <分支名称>
 ```  
 git branch -m <分支名称>
 ```
+<<<<<<< HEAD
 # 15.
+=======
+# 15.克隆源代码仓库  
+```  
+git clone <仓库地址>  //仓库中可能有多个分支，但是使用git branch命令显示只有master分支，此处可使用git checkout <分支名>进行切换
+```
+# 16.给远程仓库起别名  
+```  
+git remote add <别名> <仓库地址>  //别名一般使用origin
+```  
+
